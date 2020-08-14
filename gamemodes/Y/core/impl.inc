@@ -2,16 +2,22 @@
 	#undef _inc_impl
 #endif
 
-#include <YSI\y_hooks>
+#include <YSI_Coding\y_hooks>
+
+loadtext y[core];
 
 hook OnGameModeInit()
 {
+	Command_SetDeniedReturn(true);
 	Group_SetGlobalCommandDefault(false);
 
-	SetColour("ERROR", X11_RED);
+	SetColour("ERROR", 0xFF6347FF);
 	SetColour("SUCCESS", X11_GREEN);
 	SetColour("INFO", X11_LIGHT_BLUE);
 	SetColour("NORMAL", X11_WHITE);
+	SetColour("YELLOW", X11_YELLOW);
+	SetColour("ALERT", X11_FIREBRICK);
+	SetColour("KHAKI", X11_KHAKI);
 
 	defer onAllInitiated();
 }
@@ -19,6 +25,30 @@ hook OnGameModeInit()
 timer onAllInitiated[100]()
 {
 	call OnGroupInit();
+}
+
+public e_COMMAND_ERRORS:OnPlayerCommandReceived(playerid, cmdtext[], e_COMMAND_ERRORS:success) 
+{
+    if(!IsLoggedIn(playerid))
+    {
+		Text_Send(playerid, $LOGIN_REQUIRED);
+		return COMMAND_DENIED;
+    }
+
+    switch(success)
+    {
+    	case COMMAND_DENIED:
+    	{
+			Text_Send(playerid, $UNAUTHORIZED_ACTION_CMD);
+    		return COMMAND_DENIED;
+    	}
+    	case COMMAND_UNDEFINED:
+    	{
+			Text_Send(playerid, $UNKNOWN_CMD);
+    		return COMMAND_OK;
+    	}
+    }
+    return success;
 }
 
 public OnQueryError(errorid, const error[], const callback[], const query[], MySQL:handle)

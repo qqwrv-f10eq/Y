@@ -1,1 +1,15 @@
 [core]
+INVALID_PLAYER_SPECIFIED = {ERROR}ไม่พบผู้เล่นที่ระบุ
+UNAUTHORIZED_ACTION = {ERROR}ACCESS DENIED: {NORMAL}คุณไม่ได้รับอนุญาต
+CANNOT_USE_ON_SELF = {ERROR}คุณไม่สามารถใช้การกระทำนี้กับตัวเองได้
+ACTION_SUCCESS = {KHAKI}ดำเนินการสำเร็จแล้ว
+INVALID_LEVEL_SPECIFIED = {ERROR}ระบุเลเวลไม่ถูกต้อง เลเวลที่ใช้ได้อยู่ระหว่าง %d และ %d
+OK = ตกลง
+CLOSE = ปิด
+BACK = ย้อนกลับ
+INSPECT = ตรวจสอบ
+SELECT = เลือก
+INTERNAL_ERROR = {ERROR}เกิดข้อผิดพลาดภายในเซิร์ฟเวอร์
+UNAUTHORIZED_ACTION_CMD = {ERROR}ACCESS DENIED: {NORMAL}คุณไม่ได้รับอนุญาตให้ใช้คำสั่งนี้
+LOGIN_REQUIRED = {ERROR}ACCESS DENIED: {NORMAL}คุณต้องเข้าสู่ระบบก่อนที่จะใช้คำสั่ง
+UNKNOWN_CMD = {ERROR}ACCESS DENIED: {NORMAL}เกิดข้อผิดพลาดในการใช้คำสั่ง

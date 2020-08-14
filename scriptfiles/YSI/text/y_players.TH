@@ -1,0 +1,48 @@
+[auth]
+WELCOME_TO_SERVER = {NORMAL}ยินดีต้อนรับเข้าสู่ {YELLOW}%s
+AUTH_ACCOUNT_NOT_FOUND_A = {ERROR}ERROR: {NORMAL}ไม่พบบัญชีผู้ใช้ชื่อ %s
+AUTH_ACCOUNT_NOT_FOUND_B = {ERROR}[ ! ] {NORMAL}ตรวจสอบให้แน่ใจว่าคุณใช้ชื่อบัญชี(หลัก)ของคุณ ไม่ใช่ชื่อตัวละคร!
+AUTH_ACCOUNT_NOT_FOUND_C = {ERROR}[ ! ] {NORMAL}ถ้าต้องการสร้างบัญชีผู้ใช้โปรดไปที่ %s
+
+[login]
+INVALID_PASSWORD = {ALERT}รหัสผ่านไม่ถูกต้อง\n\n{/}
+EXCEEDED_MAX_LOGIN_ATTEMPTS = {ERROR}ERROR: {NORMAL}คุณกรอกรหัสผ่านผิดมากเกินไป
+INACTIVE_KICK = {ERROR}[ ! ] {NORMAL}คุณถูกเตะเนื่องจากไม่ได้เข้าสู่ระบบ
+
+LOGIN_BOX_TITLE = การเข้าสู่ระบบ
+LOGIN_BOX_TEXT = {NORMAL}การเข้าสู่ระบบ {YELLOW}[%s]{/}\n\n{NORMAL}โปรดกรอกรหัสผ่านด้านล่างเพื่อเลือกตัวละครของท่าน\n- เปลี่ยนสกินตัวละครได้ที่หน้าเว็บไซต์ {YELLOW}(UCP)
+LOGIN_BOX_TEXT_ATTEMPTS = %s{NORMAL}โปรดกรอกรหัสผ่านของคุณด้านล่างนี้เพื่อเข้าสู่ระบบ:\n\n{ERROR}ความล้มเหลวในการเข้าสู่ระบบ (%d/%d)
+LOGIN_BOX_LOGIN = เข้าสู่ระบบ
+LOGIN_BOX_EXIT = ออก
+
+[character]
+CHARACTER_NOT_FOUND = {ERROR}บัญชีของคุณยังไม่ได้ตั้งค่าไว้ให้ใช้ในเกม (ยังไม่ได้ยื่นใบสมัคร/ตัวละครยังไม่ถูกยืนยัน)
+CHARACTER_REGISTER_ON = {ERROR}โปรดเข้าสู่ระบบด้วยบัญชีของคุณบน %s และลองใหม่อีกครั้ง
+
+[admin]
+INVALID_COMMAND_PARAMS_SAL = {INFO}การใช้: {NORMAL}/%n <ไอดี/ชื่อบางส่วน> <เลเวล> (<ประกาศบอกทุกคน>)
+ADMIN_LEVEL_CHANGE = {INFO}เลเวลแอดมินของ %s ถูกเปลี่ยนเป็นเลเวล %d โดยแอดมิน %s
+
+[secure]
+INVALID_KEY = {ERROR}ACCESS DENIED: {NORMAL}คุณถูกเตะเนื่องจากกรอกรหัสลับไม่ถูกต้อง สิ่งนี้มีไว้ด้วยเหตุผลด้านความปลอดภัย
+
+APPLICATION_ALERT_A = {ERROR}NOTE: จนกว่าใบสมัครของคุณและตัวละครของคุณจะได้รับการยืนยัน คุณจะไม่สามารถเข้าเล่นได้
+APPLICATION_ALERT_B = {ERROR}VISIT: %s
+APPLICATION_ALERT_C = {ERROR}ตัวละครของคุณยังไม่ได้รับการยืนยัน
+APPLICATION_ALERT_D = {ERROR}ด้วยความเคารพจากทีมงาน %s
+
+EMAIL_VERIFY_MSG_A = {YELLOW}การยืนยันตนเองสองระดับ
+EMAIL_VERIFY_MSG_B = {YELLOW}บัญชีนี้ไม่ได้เข้าสู่ระบบในระยะเวลาที่นานพอสมควร
+EMAIL_VERIFY_MSG_C = {YELLOW}เพื่อให้บัญชีของคุณปลอดภัย เราต้องการให้คุณยืนยันความเป็นเจ้าของบัญชีของคุณ
+
+SECRET_TITLE  = รหัสความปลอดภัย
+SECRET_BODY_1 = {ERROR}ข้อควรระวังด้านความปลอดภัย:\n\n
+SECRET_BODY_2 = {WHITE}เราขอแนะนำระบบการยืนยันตัวตนด้วยรหัสลับเพื่อช่วยปกป้องบัญชีผู้ใช้\nสิ่งนี้จะถูกแสดงขึ้นมาเมื่อเชื่อมต่อของคุณมีการเปลี่ยนแปลงไป\n\n
+SECRET_BODY_3 = {WHITE}คุณจะต้องจำสิ่งนี้ไว้({ALERT}ห้ามลืมเด็ดขาด!!!{NORMAL})\n\n{ALERT}ขอแจ้งให้ทราบว่านี่ไม่ใช่รหัสผ่านของคุณ
+
+SECRET_VERIFY_BODY_1 = {ERROR}ข้อควรระวังด้านความปลอดภัย:\n\n
+SECRET_VERIFY_BODY_2 = {WHITE}ระบบของเราได้ตั้งสถานะการเปลี่ยนแปลงการเชื่อมต่อบัญชีของคุณ\nเพื่อให้แน่ใจว่าไม่มีการละเมิดความปลอดภัย\n\n
+SECRET_VERIFY_BODY_3 = {WHITE}โปรดกรอก {ALERT}รหัสลับ{NORMAL} ที่คุณตั้งในระหว่างการลงทะเบียนเพื่อเข้าสู่ระบบ
+
+SECRET_CONFIRM = ยืนยัน
+SECRET_EXIT = ออก

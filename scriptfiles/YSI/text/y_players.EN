@@ -1,0 +1,48 @@
+[auth]
+WELCOME_TO_SERVER = {NORMAL}Welcome to {YELLOW}%s
+AUTH_ACCOUNT_NOT_FOUND_A = {ERROR}ERROR: {NORMAL}Not found account %s
+AUTH_ACCOUNT_NOT_FOUND_B = {ERROR}[ ! ] {NORMAL}Be sure it your account not character
+AUTH_ACCOUNT_NOT_FOUND_C = {ERROR}[ ! ] {NORMAL}If you need to create one go here %s
+
+[login]
+INVALID_PASSWORD = {ALERT}Wrong password\n\n{/}
+EXCEEDED_MAX_LOGIN_ATTEMPTS = {ERROR}ERROR: {NORMAL}Too much fail at login
+INACTIVE_KICK = {ERROR}[ ! ] {NORMAL}You have been kicked for not logged in.
+
+LOGIN_BOX_TITLE = Login
+LOGIN_BOX_TEXT = {NORMAL}Login {YELLOW}[%s]{/}\n\n{NORMAL}Input your password to choose your character\n- change your character skin at website {YELLOW}(UCP)
+LOGIN_BOX_TEXT_ATTEMPTS = %s{NORMAL}Please enter your password below to login:\n\n{ERROR}Attempts (%d/%d)
+LOGIN_BOX_LOGIN = Login
+LOGIN_BOX_EXIT = Exit
+
+[character]
+CHARACTER_NOT_FOUND = {ERROR}Your account is not set up for use in the game. (The application has not yet been submitted / the character has not been confirmed)
+CHARACTER_REGISTER_ON = {ERROR}Please log in with your account on% s and try again.
+
+[admin]
+INVALID_COMMAND_PARAMS_SAL = {INFO}Using: {NORMAL}/%n <targetid> <level> (<announce_for_all>)
+ADMIN_LEVEL_CHANGE = {INFO}The admin level of %s has been changed to level %d by admin %s.
+
+[secure]
+INVALID_KEY = {ERROR}ACCESS DENIED: {NORMAL}You have been kicked for entering an incorrect password. This is for safety reasons.
+
+APPLICATION_ALERT_A = {ERROR}NOTE: until your application and your character, it has been confirmed, you will not be able to play.
+APPLICATION_ALERT_B = {ERROR}VISIT: %s
+APPLICATION_ALERT_C = {ERROR}your character hasn't been confirmed
+APPLICATION_ALERT_D = {ERROR}with respect from team %s
+
+EMAIL_VERIFY_MSG_A = {YELLOW}the self-assertion of two levels
+EMAIL_VERIFY_MSG_B = {YELLOW}this account doesn't log in period sufficiently long
+EMAIL_VERIFY_MSG_C = {YELLOW}to keep your account safe, we need you to confirm ownership of your account.
+
+SECRET_TITLE = security code
+SECRET_BODY_1 = {ERROR}safety precautions:\n\n
+SECRET_BODY_2 = {WHITE}We recommend the system to verify your identity with a secret code to help protect user accounts.\n what this will be show up when your connection changes to\n\n
+SECRET_BODY_3 = {WHITE}You will need to remember what this({ALERT}don't forget!!!{NORMAL})\n\n{ALERT}. notice that this is not your password.
+
+SECRET_VERIFY_BODY_1 = {ERROR}Safety precautions:\n\n
+SECRET_VERIFY_BODY_2 = {WHITE}Our system has set the status change connection to your account\n to ensure that no security breach.\n\n
+SECRET_VERIFY_BODY_3 = {WHITE}Please enter the {ALERT}encryption{NORMAL} you set during registration to login
+
+SECRET_CONFIRM = confirm
+SECRET_EXIT = exit

@@ -1,0 +1,5 @@
+[chat]
+SAYS = %s says: %.80s
+SAYS_NEXT = .. %s
+
+INVALID_COMMAND_PARAMS_ME = {INFO}Using: {NORMAL}/%n <action>

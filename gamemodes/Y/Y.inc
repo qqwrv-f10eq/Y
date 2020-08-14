@@ -10,6 +10,8 @@
 	#include "utils\header"
 	#include "language\header"
 
+	#include "entities\header"
+
 
 	#include "object\header"
 
@@ -24,6 +26,8 @@
 	#include "debug\impl"
 	#include "utils\impl"
 	#include "language\impl"
+
+	#include "entities\impl"
 
 	#include "object\impl"
 

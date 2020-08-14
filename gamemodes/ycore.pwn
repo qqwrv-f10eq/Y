@@ -15,7 +15,7 @@
 
 #include "Y\Y"
 
-// Here is place for custom logic
+// วางโค้ดตัวเองตรงนี้
 
 #include "Y\Y"
 

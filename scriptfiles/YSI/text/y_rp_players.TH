@@ -1,0 +1,5 @@
+[chat]
+SAYS = %s พูดว่า: %.80s
+SAYS_NEXT = .. %s
+
+INVALID_COMMAND_PARAMS_ME = {INFO}การใช้: {NORMAL}/%n <การกระทำ>

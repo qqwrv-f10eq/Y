@@ -1,0 +1,15 @@
+[core]
+INVALID_PLAYER_SPECIFIED = {ERROR}No player specified
+UNAUTHORIZED_ACTION = {ERROR}ACCESS DENIED: {NORMAL}You are not allowed
+CANNOT_USE_ON_SELF = {ERROR}You cannot use this action to myself.
+ACTION_SUCCESS = {KHAKI}Performed successfully.
+INVALID_LEVEL_SPECIFIED = {ERROR}Specify the level invalid level available be between %d and %d
+OK = OK
+CLOSE = Close
+BACK = Back
+INSPECT = Inspect
+SELECT = Select
+INTERNAL_ERROR = {ERROR}Internal server error
+UNAUTHORIZED_ACTION_CMD = {ERROR}ACCESS DENIED: {NORMAL}You are not authorized to use this command
+LOGIN_REQUIRED = {ERROR}ACCESS DENIED: {NORMAL}You must log in before using the command
+UNKNOWN_CMD = {ERROR}ACCESS DENIED: {NORMAL}An error occurred in the command
