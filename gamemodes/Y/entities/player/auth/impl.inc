@@ -48,8 +48,8 @@ FetchPlayer(playerid)
 	inline PlayerFetched()
 	{
 		if (!cache_num_rows()) {
-			#if defined Y_PLAYER_REGISTER_ACCOUNT
-				// Todo
+			#if defined Y_PLAYER_IG_REGISTER_ACCOUNT
+				@return ShowRegistrationDialog(playerid);
 			#else
 				Text_Send(playerid, $AUTH_ACCOUNT_NOT_FOUND_A, name);
 				Text_Send(playerid, $AUTH_ACCOUNT_NOT_FOUND_B);

@@ -4,6 +4,15 @@ AUTH_ACCOUNT_NOT_FOUND_A = {ERROR}ERROR: {NORMAL}ไม่พบบัญชีผู้ใช้ชื่อ %s
 AUTH_ACCOUNT_NOT_FOUND_B = {ERROR}[ ! ] {NORMAL}ตรวจสอบให้แน่ใจว่าคุณใช้ชื่อบัญชี(หลัก)ของคุณ ไม่ใช่ชื่อตัวละคร!
 AUTH_ACCOUNT_NOT_FOUND_C = {ERROR}[ ! ] {NORMAL}ถ้าต้องการสร้างบัญชีผู้ใช้โปรดไปที่ %s
 
+REGISTRATION_BOX_TITLE = สมัครสมาชิก
+REGISTRATION_BOX_TEXT = %s{WHITE}ยินดีต้อนรับผู้เล่นใหม่!\nกรอกรหัสผ่านที่ต้องการด้านล่างนี้เลย\nรหัสผ่านต้องมีความยาวตั้งแต่ %d ถึง %d ตัวอักษร
+REGISTRATION_BOX_REGISTER = สมัครสมาชิก
+REGISTRATION_BOX_EXIT = ออก
+
+PASSWORD_EMPTY = {ERROR}รหัสผ่านต้องไม่เป็นค่าว่าง\n\n{/}
+PASSWORD_TOO_SHORT = {ERROR}รหัสผ่านต้องมีความยาวอย่างน้อย %d ตัวอักษร\n\n{/}
+PASSWORD_TOO_LONG = {ERROR}รหัสผ่านมีความยาวสูงสุดแค่ %d ตัวอักษร\n\n{/}
+
 [login]
 INVALID_PASSWORD = {ALERT}รหัสผ่านไม่ถูกต้อง\n\n{/}
 EXCEEDED_MAX_LOGIN_ATTEMPTS = {ERROR}ERROR: {NORMAL}คุณกรอกรหัสผ่านผิดมากเกินไป

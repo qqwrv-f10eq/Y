@@ -4,6 +4,15 @@ AUTH_ACCOUNT_NOT_FOUND_A = {ERROR}ERROR: {NORMAL}Not found account %s
 AUTH_ACCOUNT_NOT_FOUND_B = {ERROR}[ ! ] {NORMAL}Be sure it your account not character
 AUTH_ACCOUNT_NOT_FOUND_C = {ERROR}[ ! ] {NORMAL}If you need to create one go here %s
 
+REGISTRATION_BOX_TITLE = Registration
+REGISTRATION_BOX_TEXT = %s{WHITE}Welcome new player!\nType in your new passphrase\nIt has to be between %d and %d characters long
+REGISTRATION_BOX_REGISTER = Register
+REGISTRATION_BOX_EXIT = Exit
+
+PASSWORD_EMPTY = {ERROR}Passphrase cannot be empty\n\n{/}
+PASSWORD_TOO_SHORT = {ERROR}Passphrase must be at least %d characters long\n\n{/}
+PASSWORD_TOO_LONG = {ERROR}Passphrase can be at most %d characters long\n\n{/}
+
 [login]
 INVALID_PASSWORD = {ALERT}Wrong password\n\n{/}
 EXCEEDED_MAX_LOGIN_ATTEMPTS = {ERROR}ERROR: {NORMAL}Too much fail at login

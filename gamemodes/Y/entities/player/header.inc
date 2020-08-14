@@ -6,6 +6,7 @@
 #include "security\header"
 #include "auth\header"
 #include "login\header"
+#include "registration\header"
 #include "character\header"
 #include "status\header"
 

@@ -18,25 +18,63 @@ SelectCharacter(playerid)
 	new query[160];
 
 	mysql_format(dbHandle, query, sizeof query, "SELECT c.id, c.name, s.level, s.skin FROM " CHARACTER_TABLE " c LEFT JOIN " CHARACTER_STATUS_TABLE " s ON c.id = s.character_id WHERE account_id = %d", _:Player.Auth[playerid][@id]);
-
+	
 	inline CharacterFetch()
 	{
 		if (!cache_num_rows()) {
-			#if defined Y_PLAYER_CHARACTER_CREATE
-			// Todo
+
+			#if defined Y_PLAYER_NO_MULTI_CHARACTER
+		
+				inline OnCharacterCreated()
+				{
+					if (!cache_affected_rows()) {
+						@return log("Can't add create %d character", playerid);
+					}
+					Player.Status[playerid][@id] = DBID:cache_insert_id();
+
+					inline OnStatusCreated() 
+					{
+						if (!cache_affected_rows()) {
+							@return log("Can't add create %d character status", playerid);
+						}
+						call OnPlayerLogin(playerid);
+						@return 1;
+					}
+					mysql_format(dbHandle, query, sizeof query, "INSERT INTO " CHARACTER_STATUS_TABLE " (character_id) VALUES (%d)", _:Player.Status[playerid][@id]);
+					mysql_pquery_inline(dbHandle, query, using inline OnStatusCreated);
+					@return 1;
+				}
+
+				mysql_format(dbHandle, query, sizeof(query), "INSERT INTO " CHARACTER_TABLE " (name, account_id) VALUES('%e', %d)", Player.Auth[playerid][@name], _:Player.Auth[playerid][@id]);
+				mysql_tquery_inline(dbHandle, query, using inline OnCharacterCreated);
+		
 			#else
+
 			Text_Send(playerid, $CHARACTER_NOT_FOUND);
 			Text_Send(playerid, $CHARACTER_REGISTER_ON, WEBSITE_URL);
 			defer TimedKick(playerid);	
-			@return 1;
+
 			#endif
+			@return 1;
 		}
 
 		new rows;
 		cache_get_row_count(rows);
 
-		if(rows)
-		{
+		#if defined Y_PLAYER_NO_MULTI_CHARACTER
+	
+			cache_get_value_name_int(0, "id", _:Player.Status[playerid][@id]);
+
+			#if defined Y_PLAYER_VERIFY_CHARACTER
+			VerifyAccount(playerid);
+			#else
+			call OnPlayerLogin(playerid);
+			#endif
+
+			@return log("load single character from %d", playerid);
+
+		#else
+
 			new 
 				str[40],
 				playerLevel, 
@@ -113,9 +151,10 @@ SelectCharacter(playerid)
 				PlayerTextDrawShow(playerid, charSelectTextDraw[playerid][i]);
 
 			SelectTextDraw(playerid, 0xFFFFFF95);
-		}
 
-		@return log("load %d character from %d", rows, playerid);
+			@return log("load %d character from %d", rows, playerid);
+
+		#endif
 	}
 
 	mysql_tquery_inline(dbHandle, query, using inline CharacterFetch);
@@ -147,7 +186,11 @@ hook OP_ClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				charSelectTextDrawCount[playerid] = 0;
 				Player.Status[playerid][@id] = DBID:characterLister[playerid][i];
 				
+				#if defined Y_PLAYER_VERIFY_CHARACTER
 				VerifyAccount(playerid);
+				#else
+				call OnPlayerLogin(playerid);
+				#endif
 				return Y_HOOKS_BREAK_RETURN_1;
 			}
 		}

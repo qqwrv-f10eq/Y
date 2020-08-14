@@ -6,6 +6,7 @@
 #include "security\impl"
 #include "auth\impl"
 #include "login\impl"
+#include "registration\impl"
 #include "character\impl"
 #include "status\impl"
 

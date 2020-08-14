@@ -7,7 +7,7 @@
 hook OnPlayerInit(playerid)
 {
 	SetPlayerPos(playerid, Y_DEFAULT_SPAWN_LOCATION_X, Y_DEFAULT_SPAWN_LOCATION_Y, Y_DEFAULT_SPAWN_LOCATION_Z);
-	SetPlayerInterior(playerid, 0);
-	SetPlayerVirtualWorld(playerid, 0);
+	SetPlayerInterior(playerid, Y_DEFAULT_SPAWN_INT);
+	SetPlayerVirtualWorld(playerid, Y_DEFAULT_SPAWN_WORLD);
 	return 1;
 }
