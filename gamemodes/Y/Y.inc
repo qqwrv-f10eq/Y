@@ -13,7 +13,7 @@
 	#include "entities\header"
 
 
-	#include "object\header"
+	// #include "object\header"
 
 	#if defined Y_MODE_RP
 		#include "RP\RP"
@@ -29,7 +29,7 @@
 
 	#include "entities\impl"
 
-	#include "object\impl"
+	// #include "object\impl"
 
 	#if defined Y_MODE_RP
 		#include "RP\RP"

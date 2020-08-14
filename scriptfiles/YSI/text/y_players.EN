@@ -28,6 +28,15 @@ LOGIN_BOX_EXIT = Exit
 CHARACTER_NOT_FOUND = {ERROR}Your account is not set up for use in the game. (The application has not yet been submitted / the character has not been confirmed)
 CHARACTER_REGISTER_ON = {ERROR}Please log in with your account on% s and try again.
 
+CHARACTER_NAME_EMPTY = {ERROR}Name must not be empty\n\n{/}
+CHARACTER_TOO_SHORT = {ERROR}Name must have length at least %d characters.\n\n{/}
+CHARACTER_TOO_LONG = {ERROR}Name must have a maximum length only %d characters\n\n{/}
+CHARACTER_NAME_NOT_VALID = {ERROR}Invalid name according to the theme server defined.\n\n{/}
+CHARACTER_BOX_TITLE = Character Creation
+CHARACTER_BOX_TEXT = %s{NORMAL}Length must not be lower than {ALERT}%d{NORMAL} or more than {ALERT}%d\n\n{NORMAL}to enter the character name below:
+CHARACTER_BOX_CREATE = Create
+CHARACTER_BOX_EXIT = 
+
 [admin]
 INVALID_COMMAND_PARAMS_SAL = {INFO}Using: {NORMAL}/%n <targetid> <level> (<announce_for_all>)
 ADMIN_LEVEL_CHANGE = {INFO}The admin level of %s has been changed to level %d by admin %s.

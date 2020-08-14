@@ -32,11 +32,12 @@ hook OnPlayerRequestClass(playerid, classid)
 	return 1;
 }
 
+/* // When TogglePlayerSpectating false they already force to spawn
 hook OnPlayerSpawn(playerid, classid)
 {
 	TogglePlayerSpectating(playerid, false);
 	return 1;
-}
+}*/
 
 FetchPlayer(playerid)
 {

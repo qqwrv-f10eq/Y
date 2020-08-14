@@ -18,8 +18,9 @@ DEFINE_HOOK_REPLACEMENT(OnPlayer, OP_);
 #define SCM va_SendClientMessage
 
 #define ALS_DO_GroupInit<%0> %0<GroupInit,>(none:)
-
+/*
 new
 	LoadedSystems = 0,
 	TotalSystems = 0
 ;
+*/

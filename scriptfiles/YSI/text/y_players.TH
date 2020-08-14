@@ -28,6 +28,15 @@ LOGIN_BOX_EXIT = ออก
 CHARACTER_NOT_FOUND = {ERROR}บัญชีของคุณยังไม่ได้ตั้งค่าไว้ให้ใช้ในเกม (ยังไม่ได้ยื่นใบสมัคร/ตัวละครยังไม่ถูกยืนยัน)
 CHARACTER_REGISTER_ON = {ERROR}โปรดเข้าสู่ระบบด้วยบัญชีของคุณบน %s และลองใหม่อีกครั้ง
 
+CHARACTER_NAME_EMPTY = {ERROR}ชื่อต้องไม่เป็นค่าว่าง\n\n{/}
+CHARACTER_TOO_SHORT = {ERROR}ชื่อต้องมีความยาวอย่างน้อย %d ตัวอักษร\n\n{/}
+CHARACTER_TOO_LONG = {ERROR}ชื่อต้องมีความยาวสูงสุดแค่ %d ตัวอักษร\n\n{/}
+CHARACTER_NAME_NOT_VALID = {ERROR}ชื่อไม่ถูกต้องตามรูปแบบที่เซิร์ฟเวอร์กำหนด\n\n{/}
+CHARACTER_BOX_TITLE = สร้างตัวละคร
+CHARACTER_BOX_TEXT = %s{NORMAL}ความยาวต้องไม่ต่ำกว่า {ALERT}%d{NORMAL} หรือมากกว่า {ALERT}%d\n{NORMAL}ตัวอย่าง: {INFO}MyName567\n\n{NORMAL}ป้อนชื่อตัวละครด้านล่างนี้:
+CHARACTER_BOX_CREATE = สร้าง
+CHARACTER_BOX_EXIT = 
+
 [admin]
 INVALID_COMMAND_PARAMS_SAL = {INFO}การใช้: {NORMAL}/%n <ไอดี/ชื่อบางส่วน> <เลเวล> (<ประกาศบอกทุกคน>)
 ADMIN_LEVEL_CHANGE = {INFO}เลเวลแอดมินของ %s ถูกเปลี่ยนเป็นเลเวล %d โดยแอดมิน %s

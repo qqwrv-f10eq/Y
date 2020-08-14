@@ -98,6 +98,7 @@ SetAdminLevel(playerid, level, bool:force = false)
 	return 0;
 }
 
+#pragma unused IsAdminLevel
 bool:IsAdminLevel(playerid, level)
 {
 	if (IsPlayerAdmin(playerid)) {
