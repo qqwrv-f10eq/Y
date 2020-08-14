@@ -20,5 +20,8 @@
 #include "Y\Y"
 
 main () {
-	print("====== Y-Core ======");
+    print("\n----------------------------------");
+	printf(" %.20s leaks666", "");
+    print(" Author: https://github.com/aktah/");
+    print("----------------------------------\n");
 }

@@ -1,6 +1,10 @@
 <YML>
   <group name="chat">
-    <entry name="SAYS" style="client" colour="GRAY" />
-    <entry name="SAYS_NEXT" style="client" colour="GRAY" />
+    <entry name="SAYS" style="client" colour="GREY_75" />
+    <entry name="SAYS_NEXT" style="client" colour="GREY_75" />
+    <entry name="SHOUT" style="client" colour="GREY_80" />
+    <entry name="SHOUT_A" style="client" colour="GREY_80" />
+    <entry name="SHOUT_B" style="client" colour="GREY_80" />
+    <entry name="LOW" style="client" colour="GREY_90" />
   </group>
 </YML> 

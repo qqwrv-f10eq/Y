@@ -226,10 +226,12 @@ hook OP_ClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				}
 				charSelectTextDrawCount[playerid] = 0;
 
+				#if defined Y_PLAYER_IG_REGISTER_CHARACTER
 				if (_:characterLister[playerid][i] == -1) {
 					ShowCreateCharacterDialog(playerid);
 					return Y_HOOKS_BREAK_RETURN_1;
 				}
+				#endif
 
 				Player.Status[playerid][@id] = DBID:characterLister[playerid][i];
 				
@@ -258,6 +260,7 @@ hook OnPlayerLogin(playerid)
 	return 1;
 }
 
+#if defined Y_PLAYER_IG_REGISTER_CHARACTER
 ShowCreateCharacterDialog(playerid, e_ERROR_CHARACTER:errorCode = e_ERROR_CHARACTER_NONE)
 {
 	new
@@ -343,6 +346,7 @@ ShowCreateCharacterDialog(playerid, e_ERROR_CHARACTER:errorCode = e_ERROR_CHARAC
 	Text_InputBox(playerid, using inline HandleCreationCharacter, $CHARACTER_BOX_TITLE, $CHARACTER_BOX_TEXT, $CHARACTER_BOX_CREATE, $CHARACTER_BOX_EXIT, error, Y_PLAYER_CHARACTER_NAME_MIN_PASS_LENGTH, Y_PLAYER_CHARACTER_NAME_MAX_PASS_LENGTH);
 	return 1;
 }
+#endif
 
 forward CharacaterRestrictName(const string[]);
 public CharacaterRestrictName(const string[])

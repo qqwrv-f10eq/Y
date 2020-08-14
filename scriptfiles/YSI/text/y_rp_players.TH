@@ -1,5 +1,13 @@
 [chat]
-SAYS = %s พูดว่า: %.80s
+SAYS = %s พูด: %.80s
 SAYS_NEXT = .. %s
 
-INVALID_COMMAND_PARAMS_ME = {INFO}การใช้: {NORMAL}/%n <การกระทำ>
+SHOUT = %s เปล่งเสียง: %s!
+SHOUT_A = %s เปล่งเสียง: %.80s
+SHOUT_B = .. %s!
+
+LOW = %s พูด[เบา]: %.80s
+
+INVALID_COMMAND_PARAMS_ACTION = {INFO}การใช้: {NORMAL}/%n <การกระทำ>
+INVALID_COMMAND_PARAMS_EMOTE = {INFO}การใช้: {NORMAL}/%n <อารมณ์>
+INVALID_COMMAND_PARAMS_TEXT = {INFO}การใช้: {NORMAL}/%n <ข้อความ>

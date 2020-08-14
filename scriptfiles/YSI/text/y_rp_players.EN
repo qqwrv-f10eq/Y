@@ -2,4 +2,12 @@
 SAYS = %s says: %.80s
 SAYS_NEXT = .. %s
 
-INVALID_COMMAND_PARAMS_ME = {INFO}Using: {NORMAL}/%n <action>
+SHOUT = %s shout: %s!
+SHOUT_A = %s shout: %.80s
+SHOUT_B = .. %s!
+
+LOW = %s says[low]: %.80s
+
+INVALID_COMMAND_PARAMS_ACTION = {INFO}Using: {NORMAL}/%n <action>
+INVALID_COMMAND_PARAMS_EMOTE = {INFO}Using: {NORMAL}/%n <emote>
+INVALID_COMMAND_PARAMS_TEXT = {INFO}Using: {NORMAL}/%n <ข้อความ>
