@@ -2,7 +2,7 @@
 	#undef _inc_header
 #endif
 
-#include <YSI\y_languages>
+#include <YSI_Players\y_languages>
 
 #define MAX_Y_LANGUAGES 5
 

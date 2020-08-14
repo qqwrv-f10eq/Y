@@ -7,7 +7,7 @@
 #include "config"
 
 #if defined RUN_TESTS
-	#include <YSI\y_testing>
+	#include <YSI_Core\y_testing>
 #endif
 
 #define cec_auto
@@ -15,7 +15,7 @@
 
 #include "Y\Y"
 
-// วางโค้ดตัวเองตรงนี้
+// เพิ่ม logic ของคุณตรงนี้
 
 #include "Y\Y"
 

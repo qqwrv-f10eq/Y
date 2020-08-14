@@ -13,7 +13,7 @@ hook OnPlayerRegister(playerid)
 	#else
 	FetchPlayer(playerid);
 	#endif
-
+	
 	return 1;
 }
 

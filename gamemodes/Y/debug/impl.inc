@@ -2,7 +2,7 @@
 	#undef _inc_impl
 #endif
 
-#include <YSI\y_hooks>
+#include <YSI_Coding\y_hooks>
 
 hook OnGroupInit()
 {

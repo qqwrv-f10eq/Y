@@ -118,11 +118,10 @@ YCMD:setadminlevel(playerid, params[], help)
 
 	new
 		targetid,
-		level,
-		announce
+		level
 	;
 
-	if (sscanf(params, "udD(0)", targetid, level, announce)) return Text_Send(playerid, $INVALID_COMMAND_PARAMS_SAL, YCMD:sal);
+	if (sscanf(params, "udD(0)", targetid, level)) return Text_Send(playerid, $INVALID_COMMAND_PARAMS_SAL, YCMD:sal);
 	if (targetid == playerid) return Text_Send(playerid, $CANNOT_USE_ON_SELF);
 	if (!IsPlayerConnected(targetid)) return Text_Send(playerid, $INVALID_PLAYER_SPECIFIED);
 	if (Player.Status[playerid][@admin] <= Player.Status[targetid][@admin]) return Text_Send(playerid, $UNAUTHORIZED_ACTION);
@@ -136,11 +135,6 @@ YCMD:setadminlevel(playerid, params[], help)
 	Text_Send(playerid, $ACTION_SUCCESS);
 	Text_Send(AdminGroup[0], $ADMIN_LEVEL_CHANGE, Player.Auth[targetid][@name], level, Player.Auth[playerid][@name]);
 	
-	if (announce) {
-		Text_Send(LoggedGroup, $ADMIN_LEVEL_CHANGE, Player.Auth[targetid][@name], level, Player.Auth[playerid][@name]);
-	}
-
-
 	new query[80];
 	mysql_format(dbHandle, query, sizeof query, "UPDATE " CHARACTER_STATUS_TABLE " SET admin = %d WHERE character_id = %d", Player.Status[targetid][@admin], _:Player.Auth[targetid][@id]);
 	mysql_pquery(dbHandle, query);
