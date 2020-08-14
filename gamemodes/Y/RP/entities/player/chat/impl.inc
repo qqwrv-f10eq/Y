@@ -24,6 +24,7 @@ hook OnGroupInit()
         @YCMD:low;
         @YCMD:shout;
         @YCMD:s;
+        @YCMD:b;
 	}
 }
 
@@ -196,5 +197,32 @@ YCMD:shout(playerid, params[], help)
             }
 		}
 	}
+	return 1;
+}
+
+YCMD:b(playerid, params[], help)
+{
+    if( help ) return SendClientMessage(playerid, -1, "not support !");
+    if(isnull(params)) return Text_Send(playerid, $INVALID_COMMAND_PARAMS_TEXT, YCMD:b);
+
+	if(IsOnAdminDuty(playerid))
+	{
+		if(strlen(params) > 80)
+		{
+			SendNearbyMessage(playerid, 20.0, X11_LIGHTBLUE3, "(( "ORANGE"%s"LIGHTBLUE3": %.84s ))", Player.Status[playerid][@name], params);
+			SendNearbyMessage(playerid, 20.0, X11_LIGHTBLUE3, "(( "ORANGE"%s"LIGHTBLUE3": ...%s ))", Player.Status[playerid][@name], params[80]);
+		}
+		else SendNearbyMessage(playerid, 20.0, X11_LIGHTBLUE3, "(( "ORANGE"%s"LIGHTBLUE3": %s ))", Player.Status[playerid][@name], params);
+	}
+	else
+	{
+		if(strlen(params) > 80)
+		{
+			SendNearbyMessage(playerid, 20.0, X11_LIGHTBLUE3, "(( %s: %.84s ))", Player.Status[playerid][@name], params);
+			SendNearbyMessage(playerid, 20.0, X11_LIGHTBLUE3, "(( %s: ...%s ))", Player.Status[playerid][@name], params[80]); 
+		}
+		else SendNearbyMessage(playerid, 20.0, X11_LIGHTBLUE3, "(( %s: %s ))", Player.Status[playerid][@name], params);
+	}	
+
 	return 1;
 }

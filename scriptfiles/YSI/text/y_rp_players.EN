@@ -8,6 +8,14 @@ SHOUT_B = .. %s!
 
 LOW = %s says [low]: %.80s
 
+OOC = (( [OOC] %s: %s ))
+
 INVALID_COMMAND_PARAMS_ACTION = {INFO}Using: {NORMAL}/%n <action>
 INVALID_COMMAND_PARAMS_EMOTE = {INFO}Using: {NORMAL}/%n <emote>
 INVALID_COMMAND_PARAMS_TEXT = {INFO}Using: {NORMAL}/%n <ข้อความ>
+
+[admin]
+ADUTY_ON = {SUCCESS}You are now on admin duty
+ADUTY_OFF = {SUCCESS}You are now not on admin duty
+ADUTY_BROADCAST_ON = {LIGHTBLUE3}[[ Admin %s is now on duty ]]
+ADUTY_BROADCAST_OFF = {LIGHTBLUE3}[[ Admin %s is no longer on duty ]]

@@ -3,6 +3,7 @@
 #endif
 
 #include "core\header"
-#include "chat\header"
 #include "status\header"
+#include "admin\header"
+#include "chat\header"
 #include "spawn\header"

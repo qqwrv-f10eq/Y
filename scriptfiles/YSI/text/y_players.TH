@@ -1,5 +1,5 @@
 [auth]
-WELCOME_TO_SERVER = {NORMAL}ยินดีต้อนรับเข้าสู่ {YELLOW}%s
+WELCOME_TO_SERVER = {NORMAL}ยินดีต้อนรับเข้าสู่ {ORANGE}%s
 AUTH_ACCOUNT_NOT_FOUND_A = {ERROR}ERROR: {NORMAL}ไม่พบบัญชีผู้ใช้ชื่อ %s
 AUTH_ACCOUNT_NOT_FOUND_B = {ERROR}[ ! ] {NORMAL}ตรวจสอบให้แน่ใจว่าคุณใช้ชื่อบัญชี(หลัก)ของคุณ ไม่ใช่ชื่อตัวละคร!
 AUTH_ACCOUNT_NOT_FOUND_C = {ERROR}[ ! ] {NORMAL}ถ้าต้องการสร้างบัญชีผู้ใช้โปรดไปที่ %s
@@ -19,7 +19,7 @@ EXCEEDED_MAX_LOGIN_ATTEMPTS = {ERROR}ERROR: {NORMAL}คุณกรอกรหัสผ่านผิดมากเกินไป
 INACTIVE_KICK = {ERROR}[ ! ] {NORMAL}คุณถูกเตะเนื่องจากไม่ได้เข้าสู่ระบบ
 
 LOGIN_BOX_TITLE = การเข้าสู่ระบบ
-LOGIN_BOX_TEXT = {NORMAL}การเข้าสู่ระบบ {YELLOW}[%s]{/}\n\n{NORMAL}โปรดกรอกรหัสผ่านด้านล่างเพื่อเลือกตัวละครของท่าน\n- เปลี่ยนสกินตัวละครได้ที่หน้าเว็บไซต์ {YELLOW}(UCP)
+LOGIN_BOX_TEXT = {NORMAL}การเข้าสู่ระบบ {ORANGE}[%s]{/}\n\n{NORMAL}โปรดกรอกรหัสผ่านด้านล่างเพื่อเลือกตัวละครของท่าน\n- เปลี่ยนสกินตัวละครได้ที่หน้าเว็บไซต์ {ORANGE}(UCP)
 LOGIN_BOX_TEXT_ATTEMPTS = %s{NORMAL}โปรดกรอกรหัสผ่านของคุณด้านล่างนี้เพื่อเข้าสู่ระบบ:\n\n{ERROR}ความล้มเหลวในการเข้าสู่ระบบ (%d/%d)
 LOGIN_BOX_LOGIN = เข้าสู่ระบบ
 LOGIN_BOX_EXIT = ออก
